@@ -1,15 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-//--------------------------
-//Signatures [prevent any type of code matching/plagiarism]
-int markus(int);bool markus(string);
-void markus(){
- 
-  markus("Submitted by : Parth Trehan(markus__)");
-  markus(3);markus(12);markus(17);
-  markus("Graphic Era University");
-  return;
-}
+/*
+Submitted by : Parth Trehan(markus__)
+*/
 //--------------------------
 #define sd(x) scanf("%d",&x)
 #define sll(x) scanf("%lld",&x)
@@ -19,18 +12,15 @@ void markus(){
 #define pb(x) push_back(x)
 #define sc scanf
 #define pf printf
-#define F first
-#define S second
-#define line printf("\n")
+#define x first
+#define y second
+#define println printf('\n')
 //--------------------------
 #define llu long long int unsigned
-#define li long int
 #define ll long long
 #define lli long long int
 //--------------------------
-const double PI=3.141592653589793238462643383279502884197169399375105820974944;
-const int sz = 100005;
-#define INF 1000000000
+#define PI 3.14159265358979323846
 #define mod 1000000007
 //--------------------------
 ll gcd(ll i, ll j){ll temp;if(i<j){temp=i;i=j;j=temp;}while(i%j!=0){
@@ -38,31 +28,17 @@ ll gcd(ll i, ll j){ll temp;if(i<j){temp=i;i=j;j=temp;}while(i%j!=0){
 ll lcm(ll i, ll j){ll ans=(i*j);ans/=gcd(i, j);return ans;}
 ll modpow(ll n, ll p){ll ans=1;while(p>0){if(p&1)ans=(ans*n)%mod;
                    n=(n*n)%mod;p=p/2;}return ans;}
+void print(vector <ll> v){for(ll i=0; i<v.size(); i++)
+									 cout<<v[i]<<" ";cout<<endl;}
 //--------------------------
-
-void solute();
- 
 int main(){
- 
-  markus();
+
 	ios_base::sync_with_stdio(0);
 	cin.tie(NULL);
-  //Code cooks here
-  solute();
-  markus();
-	return 0;
-}
- 
-int markus(int a){
-  return a;
-}
-bool markus(string str){
-  //Date
-  markus(3);markus(12);markus(17);
-  return true;
-}
-//-------------------------
-void solute(){
+	int g,b;
+	while(1){
 
-	
+		pf("%d\n",count);
+	}
+	return 0;
 }
