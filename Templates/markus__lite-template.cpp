@@ -32,19 +32,8 @@ const int sz = 100005;
 #define INF 1000000000
 #define mod 1000000007
 //--------------------------
-ll modll(ll a){
-
-  a = a%mod;
-  for(ll i=1;i<mod;i++){
-    if((a*i)%mod == 1)
-      return i;
-  }
-}
-
 int main(){
 
-	io1;io2;
-  //cout<<__gcd(-2,mod)<<endl;
-  cout<<(modll(-2))%mod;
+  io1;io2;
   return 0;
 }
