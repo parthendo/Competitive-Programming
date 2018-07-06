@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <algorithm>
 using namespace std;
 
@@ -34,13 +35,36 @@ string add(string a,string b){
 	return ans;
 }
 
-string multiply(string a,string b){
+string multiply(string a, string b){
 	
-	int l = a.length();
-	
+	string ans;
+	int l1 = a.length(),l2 = b.length();
+	reverse(a.begin(),a.end());
+	reverse(b.begin(),b.end());
+	vector<string> arr;
+	for(int i=0;i<l1;i++){
+		string temp = "";
+		int carry = 0;
+		int n = a[i]-'0';
+		for(int j=0;j<l2;j++){
+			int m = b[i]-'0';
+			int t = n*m + carry;
+			carry = t/10;
+			t = t%10;
+			char ch = char(t-'0');
+			temp = temp + ch;
+		}
+		if(carry>0){
+			char ch = char(carry-'0');
+			temp = temp + ch;
+		}
+		cout << temp << endl;
+		arr.push_back(temp);
+	}
+	return ans;
 }
 
 int main(){
-	string a = add("94","1");
+	string a = multiply("94")
 	return 0;
 }

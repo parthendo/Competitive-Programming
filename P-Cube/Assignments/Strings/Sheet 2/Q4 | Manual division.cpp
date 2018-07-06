@@ -5,13 +5,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int two_power(long long int n){
+int two_power(unsigned long long int n){
 	
-	int i,l = sizeof(long long int)*8,count=0;
+	int i,l = sizeof(unsigned long long int)*8,count=0;
 	printf("%d\n",l);
-	for(i=0;i<l/2;i++){
+	for(i=0;i<l;i++){
 		
-		printf("%d %lld\n",i,n&(1<<i));
+		printf("%d %ull\n",i,n&(1<<i));
 		if(n&(1<<i))
 			count++;
 	}
@@ -24,8 +24,8 @@ int two_power(long long int n){
 
 int main(){
 	
-	long long int n;
-	scanf("%lld",&n);
+	unsigned long long int n;
+	scanf("%ull",&n);
 	if(two_power(n))
 		printf("True\n");
 	else
