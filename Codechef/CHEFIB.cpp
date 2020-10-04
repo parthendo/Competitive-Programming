@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-//--------------------------
+//---------------------------
 int markus(int);bool markus(string);
 void markus(){
 
